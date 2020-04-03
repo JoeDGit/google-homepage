@@ -4,13 +4,113 @@
 
 body {
     background-color: #222324;
+    font-size: small;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100%;
+    overflow: hidden
+    
+}
+a:hover {
+    text-decoration-line: underline;
 }
 
-#google-logo {
+#glogo {
+    
+}
+
+#google-logo {   
     display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: translate( 0%, 300%)
+    justify-content: center;                               
+    
+}
+
+
+li {
+    display: inline;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none; 
+}
+
+#NavTop {
+    display: block;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+.TL {
+    float: left;
+
+}
+.TR {
+    float: right;
+}
+#NavBot {
+    display: block;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.BL {
+    float: left;
+
+}
+.BR {
+    float: right;
+}
+
+
+#bar:hover {
+    border-color: rgb(85, 85, 85)
+}
+#bar {
+    width: 582px;
+    height: 44px;
+    margin: 11px 4px;
+    padding: 0px 11px;
+    margin: auto 10px auto 10px;   
+    background-color: black;
+    border-color: black;
+    color: gray;
+    
+}
+#search-bar {
+    margin-top: 3%;
+    width: auto;
+    display: flex;
+    justify-content: center;  
+}
+
+button {
+    font-size: 14px;
+    border-radius: 4px;
+    margin: 11px 4px;
+    padding: 0px 16px;
+    min-width: 54px;
+    line-height: 27px;
+    text-align: center;
+    cursor: pointer;
+    color: #5f6368;
+    font-family: arial, sans-serif;
+    background-color: black;
+    border-color: black; 
+
+}
+
+#butt{ 
+    display: flex;
+    justify-content: center;  
 }
 
 </style>
@@ -18,12 +118,45 @@ body {
     <title>Google</title>
 </head>
 <body>
+<header>
+<div>
+    <ul id="NavTop">        
+            <li class="TL"> <a href= "https://about.google/?fg=1&utm_source=google-GB&utm_medium=referral&utm_campaign=hp-header" Style="color:#6F90AE">About</a></li>
+            <li class="TL"> <a href= "https://store.google.com/GB?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-GB" Style="color:#6F90AE">Store</a></li>
+       
+            <li class="TR"><a href ="https://www.google.com/gmail/" Style="color:#6F90AE"> Gmail</a></li>
+            <li class="TR"><a href ="https://www.google.co.uk/imghp?hl=en&tab=wi&authuser=0&ogbl" Style="color:#6F90AE"> Images</a></li>
+            <li class="TR"><img src="https://cdn3.iconfinder.com/data/icons/navigation-and-settings/24/Material_icons-01-11-512.png" alt="Google apps" id="google-apps" Style="width:30px;height:30px;"></li>
+            <li class="TR"><a href ="#" Style="color:white" style="border: 1px solid #4285f4"; background-color="blue">Sign in</a></li>
+    </ul>
+</div>
+</header>
+<footer>
+    <div>
+        <ul id="NavBot">
+            <li class="BL"><a href="https://www.google.com/intl/en_uk/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1"  Style="color:#6F90AE">Advertising</a></li>
+            <li class="BL"><a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1"  Style="color:#6F90AE">Business</a></li>
+            <li class="BL"><a href="https://google.com/search/howsearchworks/?fg=1"  Style="color:#6F90AE">How Search works</a></li>
+              
+            <li class="BR"><a href="https://policies.google.com/privacy?fg=1"  Style="color:#6F90AE">Privacy</a></li>
+            <li class="BR"><a href="https://policies.google.com/terms?fg=1"  Style="color:#6F90AE">Terms</a></li>
+            <li class="BR"><a href="https://www.google.com/preferences?hl=en"  Style="color:#6F90AE">Settings</a></li>
+        </ul>
+
+            
+    </div>
+</footer>
 
 <div id="google-logo">
-    <img alt="Google" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
- 
-
-
+    <img id="glogo" alt="Google" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" style="padding-top:109px" width="272" Height="96"> 
 </div>
-</body>
+
+<div id="search-bar">
+    <input id="bar" type="text" placeholder="search...">
+</div>
+
+<div id="butt">
+    <button>Google Search</button>
+    <button a href ="blank">I'm feeling lucky</button>
+</div>
 </html>
